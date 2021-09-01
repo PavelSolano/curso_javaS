@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header_titutlo" >
+            Calculadora de Figuras Geometricas
+        </h1>           
+    </header>
+
+
+    <section>
+        <div class="section--form-style" >
+        <h2 class="section_titulo" >Calcula el perimetro y el área de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado"> Escribe el lado del cuadrado </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular Área
+            </button>
+
+        </form>
+       </div>
+
+        <div class="section--form-style" >
+        <h2>Calcula el perimetro y el área de un Triangulo</h2>
+        <form action="">
+            <label for="InputTriangulo"> Escribe los lados</label>
+            <input type="number" id="InputTriangulo1">
+            <input type="number" id="InputTriangulo2">
+            <input type="number" id="InputTriangulo3">
+
+            <label> Escribe la altura</label>
+            <button type="button" onclick="calcularPerimetroTriangulo()" >
+                Calcular Perimetro
+            </button>
+
+            <button type="button" onclick="validarTrianguloIsoseles()" >
+                Validar Isoseles y Calcualr altura
+            </button>
+
+
+            <label> Escribe la altura y base del tringulo</label>
+            <input type="number" id="altura" placeholder="altura" >
+            <input type="number" id="base" placeholder="base"> 
+            <button type="button" onclick="calularAreaTriangulo()" >
+                Calcular Área
+            </button>
+
+        </form>
+       </div>
+
+       <div class="section--form-style" >
+        <h2>Calcula circunfernecia y el área de un Circulo</h2>
+        <form action="">
+            <label for="inputRadio"> Escribe el radio</label>
+            <input type="number" id="inputRadio">
+           
+            <button type="button" onclick="circunferenciaCirculo()" >
+                Calcular Circunferencia
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()" >
+                Calcular Área
+            </button>
+
+        </form>
+       </div>
+    </section>
+
+
+    <script src="./figuras.js"></script>
+</body>
+</html>

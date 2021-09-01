@@ -1,0 +1,70 @@
+
+
+body{
+    background-color: rgb(8, 8, 8);
+}
+
+.header_titutlo{
+    width: 80%;
+    max-width: 400px;
+    min-height: 80px;
+    max-height: 120px;
+    margin: auto;
+    border-style: solid;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20 px;
+    color: white;
+    background: #062f4f
+    
+}
+
+section{
+
+    display: block;
+}
+
+.section--form-style{
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: #813772 ;
+    color: white;
+    box-shadow: 19px -9px 30px -5px rgba(255, 255, 255, 0.75);
+    align-items: center;
+    justify-content: center;
+}
+
+
+form{
+    display: block;
+}
+section label{
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 20px;
+    font-size: 20px;
+}
+section input{
+    width: 80%;
+    max-width: 400px;
+    min-width: 180px;
+    justify-content: center;
+    margin: 5px;
+}
+
+section button{
+
+    width: 80%;
+    max-width: 400px;
+    min-width: 180px;
+    justify-content: center;
+    margin: 5px;
+}
