@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./styled.css">
+</head>
+<body>
+
+    <header>
+        <h1>Descuentos</h1>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2 class="title">Claculadora de descuentos</h2>
+            <span><i class="fas fa-shopping-cart fa-2x"></i></span>
+            <form>
+            <label for="InputPrice">¿Cuál es el precio del Producto ?
+            </label>
+            <input  id="InputPrice" type="number" placeholder="Precio">
+            <label for="descuentos">Cupon de descuento:</label>
+            <select id="cupons" name="cupons" onchange="cuponDiscont()">
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+            </select>
+            <button type="button"  onclick="onClickButtonPriceDiscont()">Calcular</button>
+
+            <p id="ResulP"></p>
+
+             </form>
+        </div>
+    </section>
+        
+
+
+    <script src="./descuento.js"></script>
+</body>
+</html>

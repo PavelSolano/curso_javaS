@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+font-size: 62.5%;
+}
+h1{
+   margin: 2rem auto;
+   font-family: .7rem; 
+   text-align: center;
+
+}
+
+.card{
+    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 280px ;
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+    box-shadow: 10px 14px 39px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 14px 39px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 14px 39px -1px rgba(0,0,0,0.75);
+    text-align: center;
+    align-content: center;
+}
+
+.card form{
+    display: flex;
+    flex-direction: column;
+}
+.card span i{
+    margin: 2rem auto;
+
+    
+}
+
+.card label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.card input,.card select {
+    width: 70%;
+    height: 20px;
+    min-width: 280px;
+    max-width: 450px;
+    margin: 1rem auto;
+  
+
+}
+
+.card button{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin: 1rem auto;
+
+}
+.card button:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.card form p{
+    
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem auto;
+}
