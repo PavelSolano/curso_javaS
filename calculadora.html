@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de rendimiento</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./calculadora.css">
+</head>
+<body>
+
+    <header>
+        <div class="header_title">
+        <span><i class="fas fa-calculator fa-2x"></i></span>
+        <h1>Calculadora de rendimiento crediticio</h1>
+        </div>
+    </header>
+    <main>
+       <form class="card">
+           <div class="card_condition">
+               <div class="card--monto">
+               <label for="">Ingresa el monto</label>
+               <input  placeholder="Monto a invertir" type="number" id="Invertion">
+              </div>
+              <div class="card--anos">
+                <label for="">Años de inversión</label>
+                <select name="anos" id="anos-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+               </div>
+           </div>
+           <hr>
+           <div class="card_time">
+                <label class="label_time--width" for="">Taza</label>
+                <input placeholder="...................%" type="number" step="any" id="taza">
+                <button class="button_calculation" onclick="display_earn();" type="button">Calcular</button>
+           </div>
+
+           <hr>
+           <div class="card_earn">
+               <label for="">Ganancia anaual</label>
+               <div class="result" id="Result"></div> 
+           </div>
+
+       </form>
+    </main>
+    <script src="./calculadora.js"></script>
+</body>
+</html>
